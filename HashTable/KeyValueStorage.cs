@@ -65,6 +65,18 @@ namespace HashTable
                 ScaleArray();
         }
 
+        public VType this[KType key]
+        {
+            get
+            {
+                return Get(key);
+            }
+            set
+            {
+                Set(key, value);
+            }
+        }
+
         public VType Get(KType key)
         {
             int tempIndex = GetKeyHash(key) % ArrayLength;

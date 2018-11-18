@@ -44,6 +44,10 @@ namespace HashTable
             Console.WriteLine("Returning optional type");
             Console.WriteLine($"exampleHashTable.PickElement(\"Kek1q\") == null == { exampleHashTable.PickElement("Kek1q") == null }");
 
+            Console.WriteLine("Access by overloaded [] operator");
+            exampleHashTable["Kekq"] = 1337;
+            Console.WriteLine(exampleHashTable["Kekq"]);
+
             Console.ReadLine();
         }
     }
